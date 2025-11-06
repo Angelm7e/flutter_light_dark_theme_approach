@@ -11,6 +11,7 @@ class TAppBarTheme {
   /// Tema de AppBar para modo claro
   static const lightAppBarTheme = AppBarTheme(
     systemOverlayStyle: SystemUiOverlayStyle(
+      systemNavigationBarColor: Colors.grey,
       statusBarColor: Colors.transparent,
       statusBarIconBrightness: Brightness.dark, // ICONOS NEGROS
       statusBarBrightness: Brightness.light, // iOS
@@ -38,7 +39,7 @@ class TAppBarTheme {
   /// Tema de AppBar para modo oscuro
   static const darkAppBarTheme = AppBarTheme(
     systemOverlayStyle: SystemUiOverlayStyle(
-      systemNavigationBarColor: Colors.transparent,
+      systemNavigationBarColor: Color.fromARGB(255, 42, 41, 41),
       statusBarColor: Colors.transparent,
       statusBarIconBrightness: Brightness.light, // ICONOS BLANCOS
       statusBarBrightness: Brightness.dark, // iOS
