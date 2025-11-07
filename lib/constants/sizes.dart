@@ -16,9 +16,10 @@ class AppSizes {
   static const double fontSizeXl = 20.0;
 
   // -- Tamaños de Botones --
-  static const double buttonHeight = 48.0;
-  static const double buttonRadius = 8.0;
+  static const double buttonHeight = 8.0;
+  static const double buttonRadius = 10.0;
   static const double buttonWidth = 120.0;
+  static const double buttonPading = 10.0;
 
   // -- Tamaños de Input Fields --
   static const double inputFieldRadius = 12.0;

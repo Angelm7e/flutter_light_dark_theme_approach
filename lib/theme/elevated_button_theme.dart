@@ -4,8 +4,8 @@ import '../../constants/sizes.dart';
 
 /// Clase que define el tema de los botones elevados (ElevatedButton)
 /// Botones con fondo sólido, usados para acciones principales
-class TElevatedButtonTheme {
-  TElevatedButtonTheme._(); // Constructor privado para evitar instancias
+class AppElevatedButtonTheme {
+  AppElevatedButtonTheme._();
 
   /// Tema de botones elevados para modo claro
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
@@ -23,7 +23,8 @@ class TElevatedButtonTheme {
       // side: Borde del botón (mismo color que el fondo para diseño cohesivo)
       side: const BorderSide(color: AppColors.primary),
       // padding: Espaciado interno vertical del botón (altura del botón)
-      padding: const EdgeInsets.symmetric(vertical: AppSizes.buttonHeight),
+      padding: const EdgeInsets.symmetric(
+          vertical: AppSizes.buttonHeight, horizontal: 20),
       // textStyle: Estilo del texto dentro del botón (tamaño, color, peso)
       textStyle: const TextStyle(
           fontSize: 16,
@@ -50,8 +51,9 @@ class TElevatedButtonTheme {
       disabledBackgroundColor: AppColors.darkerGrey,
       // side: Borde con color primario
       side: const BorderSide(color: AppColors.primary),
-      // padding: Mismo espaciado vertical
-      padding: const EdgeInsets.symmetric(vertical: AppSizes.buttonHeight),
+      // padding: Espaciado interno vertical y horizontal del botón
+      padding: const EdgeInsets.symmetric(
+          vertical: AppSizes.buttonHeight, horizontal: 20),
       // textStyle: Mismo estilo de texto
       textStyle: const TextStyle(
           fontSize: 16,

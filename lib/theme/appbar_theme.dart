@@ -5,8 +5,8 @@ import 'package:flutter/services.dart';
 
 /// Clase que define el tema de las barras de aplicación (AppBar)
 /// Configura el estilo visual de la barra superior de las pantallas
-class TAppBarTheme {
-  TAppBarTheme._();
+class AppAppBarTheme {
+  AppAppBarTheme._();
 
   /// Tema de AppBar para modo claro
   static const lightAppBarTheme = AppBarTheme(

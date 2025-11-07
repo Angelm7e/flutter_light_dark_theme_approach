@@ -13,7 +13,7 @@ import '../constants/colors.dart';
 /// Clase principal que define los temas claro y oscuro de la aplicación
 /// Este archivo centraliza todas las configuraciones de tema
 class TAppTheme {
-  TAppTheme._(); // Constructor privado para evitar instancias
+  TAppTheme._();
 
   /// Tema claro de la aplicación
   static ThemeData lightTheme = ThemeData(
@@ -21,7 +21,6 @@ class TAppTheme {
     useMaterial3: true,
     // fontFamily: Define la fuente tipográfica principal para toda la app
     fontFamily: 'Poppins',
-    // colorScheme: Esquema de colores para Material 3 (importante para evitar colores por defecto morados)
     colorScheme: ColorScheme.light(
       primary: AppColors.primary, // Color primario (azul bandera RD)
       onPrimary: AppColors.white, // Color del texto sobre el primario
@@ -52,30 +51,18 @@ class TAppTheme {
       inversePrimary: AppColors.primaryLight, // Primario inverso
       surfaceTint: AppColors.primary, // Tinte de superficie
     ),
-    // disabledColor: Color que se usa para elementos deshabilitados (botones, inputs, etc.)
     disabledColor: AppColors.grey,
-    // brightness: Indica que este es un tema claro (afecta el comportamiento de algunos widgets)
     brightness: Brightness.light,
-    // primaryColor: Color principal de la aplicación (usado por defecto en varios componentes)
     primaryColor: AppColors.primary,
-    // textTheme: Define los estilos de texto para todos los niveles (headline, body, label, etc.)
-    textTheme: TTextTheme.lightTextTheme,
-    // chipTheme: Configura el estilo de los chips (etiquetas seleccionables)
-    chipTheme: TChipTheme.lightChipTheme,
-    // scaffoldBackgroundColor: Color de fondo por defecto de las pantallas (Scaffold)
+    textTheme: AppTextTheme.lightTextTheme,
+    chipTheme: AppChipTheme.lightChipTheme,
     scaffoldBackgroundColor: AppColors.white,
-    // appBarTheme: Configura el estilo de las barras de aplicación (AppBar)
-    appBarTheme: TAppBarTheme.lightAppBarTheme,
-    // checkboxTheme: Define el estilo de las casillas de verificación
-    checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
-    // bottomSheetTheme: Configura el estilo de las hojas inferiores (BottomSheet)
-    bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
-    // elevatedButtonTheme: Define el estilo de los botones elevados (ElevatedButton)
-    elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
-    // outlinedButtonTheme: Define el estilo de los botones con borde (OutlinedButton)
-    outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
-    // inputDecorationTheme: Configura el estilo de los campos de texto (TextFormField, TextField)
-    inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
+    appBarTheme: AppAppBarTheme.lightAppBarTheme,
+    checkboxTheme: AppCheckboxTheme.lightCheckboxTheme,
+    bottomSheetTheme: AppBottomSheetTheme.lightBottomSheetTheme,
+    elevatedButtonTheme: AppElevatedButtonTheme.lightElevatedButtonTheme,
+    outlinedButtonTheme: AppOutlinedButtonTheme.lightOutlinedButtonTheme,
+    inputDecorationTheme: AppTextFormFieldTheme.lightInputDecorationTheme,
   );
 
   /// Tema oscuro de la aplicación
@@ -121,23 +108,14 @@ class TAppTheme {
     brightness: Brightness.dark,
     // primaryColor: Mismo color primario para mantener la identidad de marca
     primaryColor: AppColors.primary,
-    // textTheme: Estilos de texto adaptados para modo oscuro (colores más claros)
-    textTheme: TTextTheme.darkTextTheme,
-    // chipTheme: Chips con colores adaptados para modo oscuro
-    chipTheme: TChipTheme.darkChipTheme,
-    // scaffoldBackgroundColor: Fondo oscuro para las pantallas
+    textTheme: AppTextTheme.darkTextTheme,
+    chipTheme: AppChipTheme.darkChipTheme,
     scaffoldBackgroundColor: AppColors.black,
-    // appBarTheme: AppBar con colores adaptados para modo oscuro
-    appBarTheme: TAppBarTheme.darkAppBarTheme,
-    // checkboxTheme: Checkboxes con estilos para modo oscuro
-    checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
-    // bottomSheetTheme: BottomSheets con fondo oscuro
-    bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
-    // elevatedButtonTheme: Botones elevados con colores para modo oscuro
-    elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
-    // outlinedButtonTheme: Botones con borde adaptados para modo oscuro
-    outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
-    // inputDecorationTheme: Campos de texto con estilos para modo oscuro
-    inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
+    appBarTheme: AppAppBarTheme.darkAppBarTheme,
+    checkboxTheme: AppCheckboxTheme.darkCheckboxTheme,
+    bottomSheetTheme: AppBottomSheetTheme.darkBottomSheetTheme,
+    elevatedButtonTheme: AppElevatedButtonTheme.darkElevatedButtonTheme,
+    outlinedButtonTheme: AppOutlinedButtonTheme.darkOutlinedButtonTheme,
+    inputDecorationTheme: AppTextFormFieldTheme.darkInputDecorationTheme,
   );
 }

@@ -4,8 +4,8 @@ import '../../constants/sizes.dart';
 
 /// Clase que define el tema de los botones con borde (OutlinedButton)
 /// Botones sin fondo, solo con borde, usados para acciones secundarias
-class TOutlinedButtonTheme {
-  TOutlinedButtonTheme._(); // Constructor privado para evitar instancias
+class AppOutlinedButtonTheme {
+  AppOutlinedButtonTheme._();
 
   /// Tema de botones con borde para modo claro
   static final lightOutlinedButtonTheme = OutlinedButtonThemeData(

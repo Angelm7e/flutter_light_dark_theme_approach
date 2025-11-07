@@ -4,8 +4,8 @@ import '../../constants/sizes.dart';
 
 /// Clase que define el tema de las casillas de verificación (Checkbox)
 /// Configura el estilo visual de los checkboxes en la aplicación
-class TCheckboxTheme {
-  TCheckboxTheme._(); // Constructor privado para evitar instancias
+class AppCheckboxTheme {
+  AppCheckboxTheme._();
 
   /// Tema de checkboxes para modo claro
   static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(

@@ -3,8 +3,8 @@ import '../../constants/colors.dart';
 
 /// Clase que define los temas de texto para modo claro y oscuro
 /// Establece estilos tipográficos consistentes en toda la aplicación
-class TTextTheme {
-  TTextTheme._(); // Constructor privado para evitar instancias
+class AppTextTheme {
+  AppTextTheme._(); // Constructor privado para evitar instancias
 
   /// Tema de texto para modo claro
   static TextTheme lightTextTheme = TextTheme(

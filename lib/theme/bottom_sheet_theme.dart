@@ -3,8 +3,8 @@ import '../../constants/colors.dart';
 
 /// Clase que define el tema de las hojas inferiores (BottomSheet)
 /// BottomSheets son paneles que se deslizan desde la parte inferior de la pantalla
-class TBottomSheetTheme {
-  TBottomSheetTheme._();
+class AppBottomSheetTheme {
+  AppBottomSheetTheme._();
 
   /// Tema de BottomSheet para modo claro
   static BottomSheetThemeData lightBottomSheetTheme = BottomSheetThemeData(

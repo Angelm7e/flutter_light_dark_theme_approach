@@ -4,8 +4,8 @@ import '../../constants/sizes.dart';
 
 /// Clase que define el tema de los campos de texto (TextFormField, TextField)
 /// Configura el estilo visual de los inputs de la aplicación
-class TTextFormFieldTheme {
-  TTextFormFieldTheme._();
+class AppTextFormFieldTheme {
+  AppTextFormFieldTheme._();
 
   /// Tema de campos de texto para modo claro
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
@@ -85,7 +85,7 @@ class TTextFormFieldTheme {
     // focusedBorder: Borde enfocado en blanco para destacar en modo oscuro
     focusedBorder: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(AppSizes.inputFieldRadius),
-      borderSide: const BorderSide(width: 1, color: AppColors.white),
+      borderSide: const BorderSide(width: 1, color: AppColors.borderPrimary),
     ),
     // errorBorder: Borde de error en rojo (igual en ambos modos)
     errorBorder: const OutlineInputBorder().copyWith(

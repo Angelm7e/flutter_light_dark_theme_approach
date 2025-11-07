@@ -3,8 +3,8 @@ import '../../constants/colors.dart';
 
 /// Clase que define el tema de los chips (etiquetas seleccionables)
 /// Chips son pequeños elementos que representan entradas, atributos o acciones
-class TChipTheme {
-  TChipTheme._();
+class AppChipTheme {
+  AppChipTheme._();
 
   /// Tema de chips para modo claro
   static ChipThemeData lightChipTheme = ChipThemeData(

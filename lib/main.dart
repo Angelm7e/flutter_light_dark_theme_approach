@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:light_dark_theme_approach/Screens/secondScreen.dart';
 import 'package:light_dark_theme_approach/theme/theme.dart';
 
 void main() {
@@ -57,6 +58,17 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SecondScreen()),
+                  );
+                },
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Go to second screen"),
+                ))
           ],
         ),
       ),
